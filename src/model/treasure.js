@@ -15,7 +15,7 @@ export default class Treasure extends Sprite {
         this.isCatched = false;
         this.isCollisionTreasure = false;
         this.rectangleCollider = new RectangleCollider();
-        this.colliderTreasure = new Collider(ColliderTag.Treasure, 0, 0, ColliderTag.Treasure, 10, 10);
+        this.colliderTreasure = new Collider(ColliderTag.Treasure, 0, 0, ColliderTag.Treasure, 25, 20);
         this.colliderTreasure.pos = "treasure";
         this.addChild(this.colliderTreasure);
         CollisionManager.instance.addTag4(this.colliderTreasure);

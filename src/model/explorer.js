@@ -13,7 +13,7 @@ export default class Explorer extends Sprite{
         this.action = new PlayerController(this);
         this.explorerHit = true;
         this.explorerCollisder = new ExplorerCollisder();
-        this.colliderExplorer = new Collider(ColliderTag.Explorer, 0, 0, ColliderTag.Explorer, 10, 10);
+        this.colliderExplorer = new Collider(ColliderTag.Explorer, 0, 0, ColliderTag.Explorer, 20, 25);
         this.colliderExplorer.pos = "explorer";
         this.addChild(this.colliderExplorer);
         CollisionManager.instance.addTag3(this.colliderExplorer);

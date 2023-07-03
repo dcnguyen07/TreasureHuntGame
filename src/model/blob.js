@@ -16,7 +16,7 @@ export class Blob extends Sprite {
         this.number % 2 == 0 ? this.VY_BLOB = GameConstant.VY_BLOB : this.VY_BLOB = - GameConstant.VY_BLOB;
         this.vx = 0;
         this.vy = 1;
-        this.colliderBlob = new Collider(ColliderTag.Blob, 0, 0,ColliderTag.Blob, 15, 20);
+        this.colliderBlob = new Collider(ColliderTag.Blob, 0, 0,ColliderTag.Blob, 25, 25);
         this.colliderBlob.pos = "blob";
         this.addChild(this.colliderBlob);
         CollisionManager.instance.addTag1(this.colliderBlob);

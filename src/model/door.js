@@ -10,7 +10,7 @@ export default class Door extends Sprite {
     constructor() {
         super(utils.TextureCache[GameConstant.DOOR_IMAGE]);
         this.setPosition();
-        this.colliderDoor = new Collider(ColliderTag.Door, 0, 0, ColliderTag.Door, 5, 5);
+        this.colliderDoor = new Collider(ColliderTag.Door, 0, 0, ColliderTag.Door, 30, 30);
         this.colliderDoor.pos = "door";
         this.addChild(this.colliderDoor);
         CollisionManager.instance.addTag3(this.colliderDoor);
