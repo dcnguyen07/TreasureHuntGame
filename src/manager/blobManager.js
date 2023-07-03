@@ -10,6 +10,7 @@ export default class BlobManager extends Container {
 
         this.blobs = [];
         this.create();
+        //test
     }
 
     create() {
